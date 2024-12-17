@@ -46,3 +46,5 @@ function climbingStairs(cost) {
   }
   return Math.min(a, b);
 }
+
+// or
