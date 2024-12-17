@@ -38,3 +38,11 @@ Notes:
 
 
 // Solution
+
+function climbingStairs(cost) {
+  let a = 0, b = 0;
+  for (const x of cost) {
+    [a, b] = [b, x + Math.min(a, b)];
+  }
+  return Math.min(a, b);
+}
